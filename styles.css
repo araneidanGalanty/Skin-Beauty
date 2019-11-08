@@ -1,0 +1,96 @@
+body{
+    background-color: darkslategray;
+}
+
+h2{
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+header h1{
+    list-style: none;
+    font-style: italic;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+span{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.contact {
+    margin-top: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.container{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pic{
+    margin-right: 50px;
+}
+
+img{
+     margin: 0 30px;
+ }
+  
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+.column {
+      float: left;
+      width: 80%;
+      margin-top: 6px;
+      padding: 20px;
+  }
+
+.row {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
