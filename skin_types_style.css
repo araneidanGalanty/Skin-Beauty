@@ -4,7 +4,7 @@ body {
     margin: 0px;
     padding: 0px;
 }
-
+/* TODO: Extend mobile menu clickable area at some point*/
 /* Menu CSS start*/
 .nav-height {
   height:80px;
