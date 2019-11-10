@@ -196,7 +196,6 @@ nav>ul>li:hover, nav>ul>li>a:active {
     main {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 175px;
     }
     h1 {
         margin: auto;
