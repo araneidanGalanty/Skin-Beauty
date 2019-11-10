@@ -1,9 +1,12 @@
 *{
-  height: 100%;
   margin: 0px;
   padding: 0px;
   font-family: 'ZCOOL XiaoWei', serif;
 
+}
+
+html, body {
+  height: 100%;
 }
 
 .nav-height {
@@ -33,7 +36,19 @@ nav {
     margin: 0px;
     text-decoration: none;
     padding: 0px;
-  } 
+  }
+  
+  
+  nav>ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menuItem {
+    height:20px;
+  }
+  
   nav>ul>a {
     width: 100%;
     height: 100%;
