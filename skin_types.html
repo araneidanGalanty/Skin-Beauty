@@ -2,73 +2,87 @@
     <head>
         <meta charset="utf-8">
         <title>Skin Types</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="skin_types_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <a href="survey.html"><li>Survey</li></a>
-                    <a href="skin_types.html"><li>Skin Types</li></a>
-                    <a href="products.html"><li>Products</li></a>
-                    <a href="health.html"><li>Health</li></a>
-                    <a href="contact_us.html"><li>Contact Us</li></a>
-                </ul>
+            <nav id="full-screen-nav" class="nav-height">
+                    <ul>
+                        <a href="index.html">
+                        <li>Home</li>
+                        </a>
+                        <a href="skin_types.html">
+                        <li>Skin Types</li>
+                        </a>
+                        <a href="products.html">
+                        <li>Products</li>
+                        </a>
+                        <a href="survey.html">
+                        <li>Survery</li>
+                        </a>
+                        <a href="health.html">
+                        <li>Health</li>
+                        </a>
+                        <a href="contact.html">
+                        <li>Contact Us</li>
+                        </a>
+                    </ul>
             </nav>
         </header>
-        <h1>Skin Types</h1>
         <main>
-            <div class=".skintypes"></div>
+            <h1>Skin Types</h1>
+            <div class="skinTypesBox">
             <!--all info is copied from https://int.eucerin.com/about-skin/basic-skin-knowledge/skin-types-->
-                <ul>
-                    <li>Normal</li>
-                    <img src="https://4.bp.blogspot.com/-WXrNf1jG2P4/V6TRI2rc-aI/AAAAAAAAALg/OOIqKJs7sdIWOTLP5pIRYDalIi7fdIqIgCLcB/s1600/normal-skin.jpg" width="20%" height="20%">
+                <div class="type">
+                    <h2>Normal</h2>
+                    <img src="https://4.bp.blogspot.com/-WXrNf1jG2P4/V6TRI2rc-aI/AAAAAAAAALg/OOIqKJs7sdIWOTLP5pIRYDalIi7fdIqIgCLcB/s1600/normal-skin.jpg">
+                        <p><strong>‘Normal’ is a term widely used to refer to well-balanced skin. The scientific term for healthy skin is eudermic.</strong></p>
                         <ul>
-                            <li>‘Normal’ is a term widely used to refer to well-balanced skin. The scientific term for healthy skin is eudermic.</li>
-                            <ul>
-                                <li>fine pores</li>
-                                <li>good blood circulation</li>
-                                <li>a velvety, soft and smooth texture</li>
-                                <li>a fresh, rosy colour uniform transparency</li>
-                                <li>no blemishes</li>
-                                <li>not prone to sensitivity</li>
-                            </ul>
+                            <li>fine pores</li>
+                            <li>good blood circulation</li>
+                            <li>a velvety, soft and smooth texture</li>
+                            <li>a fresh, rosy colour uniform transparency</li>
+                            <li>no blemishes</li>
+                            <li>not prone to sensitivity</li>
                         </ul>
-                    <li>Dry</li>
-                    <img src="http://organicglow.com/wp-content/uploads/2014/03/dryskin1.jpg" width="20%" height="10%">
+                </div>
+                <div class="type">
+                    <h2>Dry</h2>
+                    <img src="http://organicglow.com/wp-content/uploads/2014/03/dryskin1.jpg">
+                    <p><strong>‘Dry’ is used to describe a skin type that produces less sebum than normal skin. As a result of the lack of sebum, dry skin lacks the lipids that it needs to retain moisture and build a protective shield against external influences.</strong></p>
                         <ul>
-                            <li>‘Dry’ is used to describe a skin type that produces less sebum than normal skin. As a result of the lack of sebum, dry skin lacks the lipids that it needs to retain moisture and build a protective shield against external influences.</li>
-                            <ul>
-                                    <li>mild scaling or flakiness in patches </li>
-                                    <li>a rough and blotchy appearance</li>
-                                    <li>a feeling of tightness</li>
-                                    <li>possible itchiness</li>
-                                    <li>calluses</li>
-                                    <li>frequent itchiness</li>
-                                </ul>
+                            <li>mild scaling or flakiness in patches </li>
+                            <li>a rough and blotchy appearance</li>
+                            <li>a feeling of tightness</li>
+                            <li>possible itchiness</li>
+                            <li>calluses</li>
+                            <li>frequent itchiness</li>
                         </ul>
-                    <li>Oily</li>
-                    <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/321/321090/close-up-of-a-womans-oily-skin.jpg" width="15%" height="10%">
+                </div>
+                <div class="type">
+                    <h2>Oily</h2>
+                    <img src="https://cdn-prod.medicalnewstoday.com/content/images/articles/321/321090/close-up-of-a-womans-oily-skin.jpg">
+                    <p><strong>‘Oily’ is used to describe a skin type with heightened sebum production. This over production is known as seborrhea.</strong></p>
                         <ul>
-                            <li>‘Oily’ is used to describe a skin type with heightened sebum production. This over production is known as seborrhea.</li>
-                            <ul>
-                                <li>enlarged, clearly visible pores</li>
-                                <li>a glossy shine</li>
-                                <li>thicker, pale skin: blood vessels may not be visible</li>
-                            </ul>
+                            <li>enlarged, clearly visible pores</li>
+                            <li>a glossy shine</li>
+                            <li>thicker, pale skin: blood vessels may not be visible</li>
                         </ul>
-                    <li>Combination</li>
-                    <img src="https://www.dynamicwife.com/wp-content/uploads/2018/03/best-moisturizers-for-combination-skin-2018-reviews-guide.jpg" width="20%" height="10%">
+                </div>
+                <div class="type">
+                    <h2>Combination</h2>
+                    <img src="https://www.dynamicwife.com/wp-content/uploads/2018/03/best-moisturizers-for-combination-skin-2018-reviews-guide.jpg">
+                    <p><strong>Combination skin is, as the name suggests, skin that consists of a mix of skin types.</strong></p>
                         <ul>
-                            <li>Combination skin is, as the name suggests, skin that consists of a mix of skin types.</li>
-                            <ul>
-                                <li>an oily T-zone (forehead, chin and nose)</li>
-                                <li>enlarged pores in this area perhaps with some impurities</li>
-                                <li>normal to dry cheeks</li>
-                            </ul>
+                            <li>an oily T-zone (forehead, chin and nose)</li>
+                            <li>enlarged pores in this area perhaps with some impurities</li>
+                            <li>normal to dry cheeks</li>
                         </ul>
-                </ul>
+                </div>
             </div>
+            </main>
         </main>
         <script src="" async defer></script>
     </body>
