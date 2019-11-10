@@ -205,6 +205,10 @@ nav>ul>li:hover, nav>ul>li>a:active {
     }
     
   /* Mobile Menu CSS start*/
+  .nav-height {
+    height: auto;
+  }
+  
   .nonMobileMenu {
     display: none;
   }

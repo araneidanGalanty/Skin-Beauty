@@ -238,6 +238,10 @@ nav {
   }
   
   /* Mobile Menu CSS start*/
+  .nav-height {
+    height: auto;
+  }
+  
   .nonMobileMenu {
     display: none;
   }
