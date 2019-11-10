@@ -115,6 +115,8 @@ nav {
 	padding: 5px;
 	display: flex;
 	flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .productImg {
@@ -124,8 +126,24 @@ nav {
 }
 
 .productDesc {
-	height: auto;
-	display: block;
+	display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: auto;
+}
+
+.buyBtn {
+  height: 36px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px 32px;
+  cursor: pointer;
+  position: relative;
+  margin: 5px;
+  top: 140px;
+  right: 10px;
 }
 
 @keyframes slide-up {
@@ -141,7 +159,7 @@ nav {
 	}
 }
 
-@media only screen and (min-width: 999px) {
+@media only screen and (min-width: 992px) {
 	
 	.productsContainer {
 		flex-direction: column;
@@ -184,6 +202,10 @@ nav {
 	.productImg {
 		height: auto;
 	}
+  
+  .buyBtn {
+    position: static;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -205,6 +227,10 @@ nav {
 	.productImg {
 		height: auto;
 	}
+  
+  .buyBtn {
+    position: static;
+  }
   
   /* Mobile Menu CSS start*/
   .nonMobileMenu {
