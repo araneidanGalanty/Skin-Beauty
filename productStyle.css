@@ -1,16 +1,15 @@
-body {
+*{
   margin: 0px;
   padding: 0px;
+  font-family: 'ZCOOL XiaoWei', serif;
+
 }
 
-.pageContainer {
-  margin: 0px;
-  padding: 0px;
-  background-color: #903CA0;
+html, body {
   height: 100%;
-  width: 100%;
 }
 
+/* Menu CSS start*/
 .nav-height {
   height:80px;
 }
@@ -38,7 +37,19 @@ nav {
     margin: 0px;
     text-decoration: none;
     padding: 0px;
-  } 
+  }
+  
+  
+  nav>ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menuItem {
+    height:20px;
+  }
+  
   nav>ul>a {
     width: 100%;
     height: 100%;
@@ -59,11 +70,34 @@ nav {
 
   }
 
+.menuIcon {
+  display: none;
+}
+
+.menuBtn {
+    position: absolute;
+    left: -99999px;
+}
+
+.mobileMenu {
+  display: none;
+}
+/* Menu CSS end*/
+
+.pageContainer {
+  margin: 0px;
+  padding: 0px;
+  background-color: #903CA0;
+  height: 100%;
+  width: auto;
+}
+
 
 .productsContainer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+  background-color: #903CA0;
   margin: 0px;
 }
 
@@ -131,7 +165,7 @@ nav {
 	}
 }
 
-@media only screen and (min-width: 400px) and (max-width: 998px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
 	.productsContainer {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -152,7 +186,7 @@ nav {
 	}
 }
 
-@media only screen and (max-width: 399px) {
+@media only screen and (max-width: 768px) {
 	.productsContainer {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -171,4 +205,42 @@ nav {
 	.productImg {
 		height: auto;
 	}
+  
+  /* Mobile Menu CSS start*/
+  .nonMobileMenu {
+    display: none;
+  }
+  
+  .menuIcon:hover {
+    cursor: pointer;
+  }
+  
+  .menuIcon {
+    display: block;
+  }
+  
+  .menuBtn:checked ~ .mobileMenu {
+    display: block;
+  }
+  
+  .mobileMenuItems {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(237,211,192);
+    margin-bottom: 30px;
+  }
+  
+  .mobileMenuItems>a {
+    margin: 30px;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: rgb(87, 25, 140);
+  }
+  /* Mobile Menu CSS end*/
 }
