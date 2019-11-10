@@ -204,6 +204,10 @@ nav>ul>li:hover, nav>ul>li>a:active {
     }
     
   /* Mobile Menu CSS start*/
+  .nav-height {
+    height: auto;
+  }
+  
   .nonMobileMenu {
     display: none;
   }
@@ -219,8 +223,8 @@ nav>ul>li:hover, nav>ul>li>a:active {
   
   .navIcon {
     border: none;
-    width: 32px;
-    height: 32px;
+    height: 50px;
+    width: 50px;
   }
   
   .menuBtn:checked ~ .mobileMenu {

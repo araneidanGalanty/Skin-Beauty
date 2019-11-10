@@ -115,6 +115,10 @@ nav {
 
 @media only screen and (max-width:768px) {
   /* Mobile Menu CSS start*/
+  .nav-height {
+    height: auto;
+  }
+  
   .nonMobileMenu {
     display: none;
   }
