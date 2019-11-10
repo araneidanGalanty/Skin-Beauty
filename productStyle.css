@@ -1,3 +1,4 @@
+
 .productsContainer {
 	display: flex;
 	flex-wrap: wrap;
@@ -43,6 +44,12 @@
 }
 
 @media only screen and (min-width: 999px) {
+	.nav {
+		float: left;
+		height: 100%;
+		background-color: grey
+	}
+	
 	.productsContainer {
 		flex-direction: column;
 		flex-wrap: wrap;
