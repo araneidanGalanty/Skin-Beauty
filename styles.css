@@ -1,5 +1,5 @@
 body{
-    background-color: darkslategray;
+    background-color: #903CA0;
 }
 
 h2{
@@ -21,10 +21,9 @@ header h1{
     color: white;
 }
 
-span{
+div{
     color: white;
     font-size: 15px;
-    text-align: center;
 }
 .contact {
     margin-top: 30px;
@@ -71,6 +70,10 @@ input[type=submit] {
     border: none;
     cursor: pointer;
 }
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
   
 .column {
       float: left;
@@ -79,14 +82,14 @@ input[type=submit] {
       padding: 20px;
   }
 
-.row {
+.row:after {
       content: "";
       display: table;
       clear: both;
   }
 
 
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 998px) {
     .column, input[type=submit] {
         width: 100%;
         margin-top: 0;
