@@ -31,8 +31,11 @@ h1 {
 }
 img {
     object-fit: contain;
-    height: 100px;
-    width: 100px;
+    width: 250px;
+    display:block;
+    margin:auto;
+    border-radius: 10%;
+    border: 2px solid black;
 }
 .nav-height {
     height:80px;
