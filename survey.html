@@ -22,6 +22,39 @@
         </header>
         <main>
             <h1>Survey</h1>
+            <div id="questionBox">
+                    <form action="/action_page.php">
+                        <div class="question">
+                            <h3>Do you have no blemishes or have no skin sensitivity?</h3>
+                            <select name="normal">
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+                        </div>
+                        <div class="question">
+                            <h3>Do you have itchy, rough, or flakey skin?</h3>
+                            <select name="dry">
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+                        </div>
+                        <div class="question">
+                                <h3>Do you have large pores or a glossy shine?</h3>
+                            <select name="oily">
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+                        </div>
+                        <div class="question">
+                            <h3>Do you have an oily T-zone (forehead, chin and nose) and dry/normal skin on cheeks?</h3>
+                            <select name="combination">
+                                <option value="true">True</option>
+                                <option value="false">False</option>
+                            </select>
+                        </div>
+                        <input type="submit" id="submit">
+                    </form>
+                </div>
         </main>
         <!-- <script src="" async defer></script> -->
     </body>
