@@ -8,6 +8,11 @@
 html, body {
   height: 100%;
 }
+
+.groupMemberLink {
+  margin: 30px;
+}
+
 /* Menu CSS start*/
 .nav-height {
   height:80px;
