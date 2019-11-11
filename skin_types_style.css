@@ -167,7 +167,7 @@ nav>ul>li:hover, nav>ul>li>a:active {
     background-color: rgba(187, 149, 219,0.6);
 }
 /*for tablet*/
-@media only screen and (max-width: 991px) and (min-width: 769px) {
+@media only screen and (max-width: 991px) and (min-width: 601px) {
     /*nav img, nav>ul>li, nav>ul, .nav-height, nav>ul>li>a{
       display: flex;
       flex-wrap: wrap;
@@ -186,7 +186,7 @@ nav>ul>li:hover, nav>ul>li>a:active {
     }
 }
 /*for phone*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     nav img, nav>ul>li, nav>ul, .nav-height, nav>ul>li>a{
       display: flex;
       flex-wrap: wrap;

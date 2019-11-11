@@ -191,7 +191,7 @@ body {
 	}
 }
 
-@media only screen and (min-width: 769px) and (max-width: 991px) {
+@media only screen and (min-width: 601px) and (max-width: 991px) {
 	.productsContainer {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -216,7 +216,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .productsContainer {
 		flex-direction: row;
 		flex-wrap: wrap;
