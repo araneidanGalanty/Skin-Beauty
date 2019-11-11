@@ -214,7 +214,7 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-	.productsContainer {
+  .productsContainer {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
@@ -262,7 +262,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color:rgb(237,211,192);
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   
   .mobileMenuItems>li>a {

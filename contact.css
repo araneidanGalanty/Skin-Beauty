@@ -1,4 +1,5 @@
 body{
+    font-family: 'ZCOOL XiaoWei', serif;
     background-color: #903CA0;
     width: 100%;
     height:100%;
@@ -91,6 +92,85 @@ input[type=submit]:hover {
       display: table;
       clear: both;
   }
+  
+  /* Menu CSS start*/
+.nav-height {
+  height:80px;
+}
+nav {
+  width: 100%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: rgb(237,211,192);
+  -webkit-box-shadow: 0px 4px 15px 1px rgba(50,50,50,1);
+  box-shadow: 0px 4px 15px 1px rgba(50,50,50,1);
+  z-index: 100;
+}
+  nav>ul {
+    width: 100%;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    text-decoration: none;
+    padding: 0px;
+  }
+  
+  
+  nav>ul>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .menuItem {
+    height:20px;
+  }
+  
+  nav>ul>li>a {
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: rgb(87, 25, 140);
+  }
+  nav img {
+    height: 50px;
+  }
+  nav>ul>li:hover, nav>ul>li:active {
+    background-color: rgba(187, 149, 219,0.6);
+  }
+  
+  .mobileMenuItems>li:hover, mobileMenuItems>li:active {
+    background-color: rgba(187, 149, 219,0.6);
+  }
+
+.menuIcon {
+  display: none;
+}
+
+.menuBtn {
+    position: absolute;
+    left: -99999px;
+}
+
+.mobileMenu {
+  display: none;
+}
+/* Menu CSS end*/
 
 
 @media screen and (max-width: 998px) {
@@ -99,85 +179,6 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
-/* Menu CSS start*/
-.nav-height {
-    height:80px;
-  }
-  nav {
-    width: 100%;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    background-color: rgb(237,211,192);
-    -webkit-box-shadow: 0px 4px 15px 1px rgba(50,50,50,1);
-    box-shadow: 0px 4px 15px 1px rgba(50,50,50,1);
-    margin-bottom: 30px;
-    z-index: 100;
-  }
-    nav>ul {
-      width: 100%;
-      width: 100vw;
-      height: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-around;
-      align-items: center;
-      list-style-type: none;
-      margin: 0px;
-      text-decoration: none;
-      padding: 0px;
-    }
-    
-    
-    nav>ul>li {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-    }
-    
-    .menuItem {
-      height:20px;
-    }
-    
-    nav>ul>li>a {
-      width: 100%;
-      height: 100%;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0px;
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      color: rgb(87, 25, 140);
-    }
-    nav img {
-      height: 50px;
-    }
-    nav>ul>li:hover, nav>ul>li:active {
-      background-color: rgba(187, 149, 219,0.6);
-    }
-    
-    .mobileMenuItems>li:hover, mobileMenuItems>li:active {
-      background-color: rgba(187, 149, 219,0.6);
-    }
-  
-  .menuIcon {
-    display: none;
-  }
-  
-  .menuBtn {
-      position: absolute;
-      left: -99999px;
-  }
-  
-  .mobileMenu {
-    display: none;
-  }
-  /* Menu CSS end*/
   #cover {
       background-image: url(cover.png);
       background-position: 50% 50%;
@@ -206,9 +207,14 @@ input[type=submit]:hover {
   
   @media only screen and (max-width:768px) {
     /* Mobile Menu CSS start*/
+    .nav-height {
+      height: auto;
+    }
+    
     .nonMobileMenu {
       display: none;
     }
+    
     
     .menuIcon:hover {
       cursor: pointer;
@@ -218,15 +224,28 @@ input[type=submit]:hover {
       display: block;
     }
     
+    .navIcon {
+      border: none;
+      height: 50px;
+      width: 50px;
+    }
+    
     .menuBtn:checked ~ .mobileMenu {
       display: block;
+    }
+    
+    .mobileMenu {
+      width: 100%;
+      padding: 0px;
     }
     
     .mobileMenuItems {
       display: flex;
       flex-direction: column;
       background-color:rgb(237,211,192);
-      margin-bottom: 30px;
+      margin-bottom: 0px;
+      list-style: none;
+      padding: 0px;
     }
     
     .mobileMenuItems>li>a {

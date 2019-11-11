@@ -139,7 +139,7 @@ nav {
     display: flex;
     flex-direction: column;
     background-color:rgb(237,211,192);
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   
   .mobileMenuItems>li>a {
