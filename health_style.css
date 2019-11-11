@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: 'ZCOOL XiaoWei', serif;
     background-color: #903CA0;

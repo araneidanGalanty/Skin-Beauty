@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'ZCOOL XiaoWei', serif;
-
+  box-sizing: border-box;
 }
 
 html, body {
@@ -119,6 +119,10 @@ nav {
     height: auto;
   }
   
+  .mobileMenu {
+    text-align: center;
+  }
+  
   .nonMobileMenu {
     display: none;
   }
@@ -140,6 +144,8 @@ nav {
     flex-direction: column;
     background-color:rgb(237,211,192);
     margin-bottom: 0px;
+    list-style: none;
+    padding: 0px;
   }
   
   .mobileMenuItems>li>a {
