@@ -6,6 +6,10 @@ body{
     margin:0px;
 }
 
+div{
+    text-align: center;
+}
+
 h2{
     color: white;
 }
