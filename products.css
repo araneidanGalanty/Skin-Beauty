@@ -138,6 +138,12 @@ body {
   flex-direction: column;
   width: 75%;
   height: auto;
+  flex-grow: 1;
+}
+
+.btnContainer {
+  position: relative;
+  
 }
 
 .buyBtn {
@@ -148,10 +154,10 @@ body {
   background-color: white;
   padding: 10px 32px;
   cursor: pointer;
-  position: relative;
   margin: 5px;
-  top: 140px;
-  right: 10px;
+  position:absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @keyframes slide-up {
