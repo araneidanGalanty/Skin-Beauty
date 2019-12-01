@@ -22,10 +22,11 @@ function validate() {
         }
     }
     if (count > 1) {
-        info = document.createTextNode("ERROR: You must select True for at ONLY ONE of the statements.");
+        info = document.createTextNode("ERROR: You must select True for ONLY ONE of the statements.");
         p = document.createElement("p");
         p.appendChild(info);
         div.appendChild(p);
+        div.style.display="block";
         return false;
     }
     else {
@@ -69,4 +70,5 @@ function result() {
         p.appendChild(info);
         div.appendChild(p);
     }
+    div.style.display="block";
 }
