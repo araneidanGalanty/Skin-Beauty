@@ -523,4 +523,13 @@ label {
     box-sizing: border-box;
     resize: vertical;
   }
+  
+  .recieptContainer, .formContainer, recieptContainer {
+    max-height: 480px;
+  }
+  
+  .reciept {
+    max-height: 480px;
+  }
+  
 }
