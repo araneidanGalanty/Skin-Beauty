@@ -156,6 +156,17 @@ label {
   white-space: pre;
 }
 
+/* Looks like moz doesn't work with this one. Has to be separate.*/
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 /* Menu CSS start*/
 .nav-height {
     height:80px;
