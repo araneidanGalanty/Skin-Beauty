@@ -61,10 +61,18 @@
             <h3 class="buyFormTitle">PLACEHOLDER</h3>
             <div class="formRow">
               <div class="labelCol">
+                <label for="amount" class="purchaseLabel">Product Units</label>
+              </div>
+              <div class="inputCol">
+                <input type="number" id="amount" min="1" name="amount" placeholder="Units to purchase...">
+              </div>
+            </div>
+            <div class="formRow">
+              <div class="labelCol">
                 <label for="fname" class="purchaseLabel">First Name</label>
               </div>
               <div class="inputCol">
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="fname" name="firstname" placeholder="Your name...">
               </div>
             </div>
             <div class="formRow">
@@ -72,7 +80,7 @@
                 <label for="lname" class="purchaseLabel">Last Name</label>
               </div>
               <div class="inputCol">
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
               </div>
             </div>
             <div class="formRow">
@@ -81,10 +89,18 @@
               </div>
               <div class="inputCol">
                 <select id="country" name="country">
-                  <option value="australia">Australia</option>
                   <option value="canada">Canada</option>
-                  <option value="usa">USA</option>
+                  <option value="usa" selected>USA</option>
                 </select>
+              </div>
+            </div>
+            <div class="formRow">
+              <div class="labelCol">
+                <label for="shipping" class="purchaseLabel">Shipping Speed</label>
+              </div>
+              <div class="inputCol">
+                <input type="radio" name="shipping" value="standard" id="standard" checked><label for="standard"> Standard</label><br>
+                <input type="radio" name="shipping" value="express" id="express"><label for="express"> Express</label>
               </div>
             </div>
             <div class="formRow">

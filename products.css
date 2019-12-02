@@ -17,7 +17,7 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  display: block;
+  display: none;
   justify-content: center;
   z-index: 1000;
 }
@@ -67,10 +67,10 @@ body {
   margin-top: 6px;
 }
 
-input[type=text], select, textarea{
+input[type=text], select, textarea, input[type=number]{
   width: 75%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
@@ -346,7 +346,7 @@ label {
     display: flex;
   }
   
-  input[type=text], select, textarea{
+  input[type=text], select, textarea, input[type=number]{
     flex-grow: 1;
     /*justify-self: center;*/
     padding: 12px;
@@ -469,7 +469,7 @@ label {
     display: flex;
   }
   
-  input[type=text], select, textarea{
+  input[type=text], select, textarea, input[type=number]{
     flex-grow: 1;
     /*justify-self: center;*/
     padding: 12px;
