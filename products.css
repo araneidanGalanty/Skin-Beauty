@@ -216,6 +216,7 @@ label {
   
   .menuIcon {
     display: none;
+    margin: 0px;
   }
   
   .menuBtn {
@@ -447,6 +448,7 @@ label {
   
   .menuIcon {
     display: block;
+    padding: 0px;
   }
   
   .navIcon {
