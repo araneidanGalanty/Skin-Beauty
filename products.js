@@ -18,6 +18,8 @@ $(document).ready(function () {
     var prodId = $(this).attr('id');
     currentProd = prodId;
     $('.buyFormTitle').text(products[currentProd].name);
+    $('#amount').val("");
+    $('label[for="amount"]').text($('label[for="amount"]').text().replace('✔️',''));
   });
 
   $('#overlay').on('click', function(e) {
@@ -61,6 +63,8 @@ $(document).ready(function () {
     }
     purchasePrice += 10;  // for shipping
     $('#recieptPrice').text(`$${purchasePrice}`);
+    $('#amount').val("");
+    $('label[for="amount"]').text($('label[for="amount"]').text().replace('✔️',''));
   });
   
 });
