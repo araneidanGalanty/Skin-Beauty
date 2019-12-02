@@ -25,6 +25,7 @@ body {
 
 .formContainer, .recieptContainer {
   width: 100%;
+  height: 85%;
   overflow: auto;
   position: fixed;
   display: flex;
@@ -32,6 +33,10 @@ body {
   z-index: 1100;
   margin-bottom: 1000px;
   overflow: hidden;
+}
+
+.recieptContainer {
+  height: auto;
 }
 
 #instructions {
@@ -49,7 +54,6 @@ body {
 	border: 1px solid black;
   background-color: #EDC0C4;
 	min-width: 250px;
-  max-height: 500px;
 	box-shadow: 0px 4px 15px 1px rgba(50,50,50,1);
   z-index: 1110;
   overflow-y:auto;
@@ -530,12 +534,7 @@ label {
     resize: vertical;
   }
   
-  .recieptContainer, .formContainer, recieptContainer {
-    max-height: 480px;
+  .formContainer {
+  height: 75%;
   }
-  
-  .reciept {
-    max-height: 480px;
-  }
-  
 }
