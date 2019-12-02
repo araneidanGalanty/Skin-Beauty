@@ -57,8 +57,48 @@
       </nav>
       <div id="overlay">
         <div class="formContainer">
-          <div class="buyForm">
-          </div>
+          <form class="buyForm">
+            <h3 class="buyFormTitle">PLACEHOLDER</h3>
+            <div class="formRow">
+              <div class="labelCol">
+                <label for="fname" class="purchaseLabel">First Name</label>
+              </div>
+              <div class="inputCol">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="formRow">
+              <div class="labelCol">
+                <label for="lname" class="purchaseLabel">Last Name</label>
+              </div>
+              <div class="inputCol">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div class="formRow">
+              <div class="labelCol">
+                <label for="country" class="purchaseLabel">Country</label>
+              </div>
+              <div class="inputCol">
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="formRow">
+              <div class="labelCol">
+                <label for="instructions" class="purchaseLabel">Delivery Instructions</label>
+              </div>
+              <div class="inputCol">
+                <textarea id="instructions" name="instructions" placeholder="Delivery Instructions..." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="formRow">
+              <input type="submit" value="Submit" class="purchaseLabel">
+            </div>
+          </form>
         </div>
       </div>
 			<div class="productsContainer">

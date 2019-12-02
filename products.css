@@ -17,14 +17,14 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  display: none;
+  display: block;
   justify-content: center;
   z-index: 1000;
 }
 
 .formContainer {
   width: 100%;
-  height: 100%;
+  overflow: auto;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -34,14 +34,73 @@ body {
 .buyForm {
   position: relative;
   top: 10px;
-	height: 250px;
-  width: 250px;
+  display: flex;
+  flex-direciton: column;
+  flex-wrap: wrap;
+	height: auto;
   margin: 10px;
 	border: 1px solid black;
   background-color: #EDC0C4;
 	min-width: 250px;
 	box-shadow: 0px 4px 15px 1px rgba(50,50,50,1);
   z-index: 1110;
+}
+
+.buyFormTitle {
+  margin: 10px;
+}
+
+.formRow {
+  flex-grow: 1;
+  flex: 100%;
+}
+
+.labelCol {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.inputCol {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+input[type=text], select, textarea{
+  width: 75%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin: 10px;
+}
+
+input[type=submit] {
+  float: right;
+  height: 36px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px 32px;
+  cursor: pointer;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 /* Menu CSS start*/
@@ -228,6 +287,13 @@ body {
 		height: auto;
 		margin-right: 10px;
 	}
+  
+  .buyForm {
+    flex-grow: 1;
+		flex: 50%;
+    max-width: 750px;
+  }
+  
 }
 
 @media only screen and (min-width: 601px) and (max-width: 991px) {
@@ -252,6 +318,42 @@ body {
   
   .buyBtn {
     position: static;
+  }
+  
+  .buyForm {
+    flex-grow: 1;
+		flex: 50%;
+    max-width: 500px;
+  }
+  
+  .formRow {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .labelCol, .inputCol {
+    flex: 100%;
+    margin-top: 0;
+  }
+  
+  .labelCol {
+    justify-self: left;
+  }
+  
+  
+  .inputCol {
+    width: 100%;
+    display: flex;
+  }
+  
+  input[type=text], select, textarea{
+    flex-grow: 1;
+    /*justify-self: center;*/
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
   }
 }
 
@@ -339,4 +441,41 @@ body {
     color: rgb(87, 25, 140);
   }
   /* Mobile Menu CSS end*/
+  
+  .buyForm {
+    flex-grow: 1;
+		flex: 50%;
+    max-width: 500px;
+  }
+  
+  .formRow {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .labelCol, .inputCol {
+    flex: 100%;
+    margin-top: 0;
+  }
+  
+  .labelCol {
+    justify-self: left;
+    width: 100%;
+  }
+  
+  
+  .inputCol {
+    width: 100%;
+    display: flex;
+  }
+  
+  input[type=text], select, textarea{
+    flex-grow: 1;
+    /*justify-self: center;*/
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
 }

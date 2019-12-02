@@ -1,10 +1,11 @@
-$('#prod0').on('click', function () {
-    $('#overlay').show();
-    $('.formContainerContainer').show();
+$('#prod0').on('click', function (e) {
+  $('#overlay').show();
 })
 
-$('#overlay').on('click', function () {
-    $('#overlay').hide();
-    if(e.target !== e.currentTarget) return;
-    $('.formContainerContainer').hide();
+$('#overlay').on('click', function (e) {
+  $('#overlay').hide();
 })
+
+$(".buyForm").click(function(e){
+    e.stopPropagation();
+});
