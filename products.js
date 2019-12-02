@@ -35,6 +35,16 @@ $(document).ready(function () {
     }
   });
   
+  $("input[type='text'], input[type='number']").on("change", function(){
+    var inputId = $(this).attr('id');
+    var labelSelector = `label[for='${inputId}']`
+    if ($(this).val().length > 0) {
+      $(labelSelector).text($(labelSelector).text() + '✔️');
+    } else {
+      $(labelSelector).text($(labelSelector).text().replace('✔️',''));
+    }
+  });  
+  
   $('.buyForm').submit(function(e) {
     e.preventDefault();
     $('.formContainer').fadeOut();
