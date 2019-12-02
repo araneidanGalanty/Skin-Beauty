@@ -34,6 +34,10 @@ body {
   overflow: hidden;
 }
 
+#instructions {
+  height: 75px;
+}
+
 .buyForm, .reciept {
   position: relative;
   top: 10px;
