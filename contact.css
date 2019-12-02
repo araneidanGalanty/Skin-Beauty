@@ -30,6 +30,10 @@ h1{
     color: white;
 }
 
+textarea{
+    height: 170px;
+}
+
 div{
     color: white;
     font-size: 15px;
