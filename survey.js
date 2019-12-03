@@ -65,7 +65,7 @@ function result() {
         div.appendChild(p);
     }
     else {
-        info = document.createTextNode("ERROR: You must select True for at least one of the statements.");
+        info = document.createTextNode("ERROR: You must select True for ONE of the statements.");
         p = document.createElement("p");
         p.appendChild(info);
         div.appendChild(p);
